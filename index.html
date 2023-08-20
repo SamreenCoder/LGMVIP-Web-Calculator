@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  
+</head>
+<body>
+<div class="container w-25 mt-lg-5" id="cont">
+    <div class="row">
+        
+          <input type="text" id="tablebox"></td>
+        
+               <table border="1" class="w-75 h-100 m-lg-4">
+                <tr>
+                    <td><input type="button" value="x2"  onclick="square()" class="fun"></td>
+                    <td><input type="button" value="x3" onclick="cube()" class="fun"></td>
+                    <td><input type="button" value="lg" onclick="log()" class="fun"></td>
+                    <td><input type="button" value="C" onclick="clr()" style="background-color:orange; border: orange;"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="sin" onclick="sin()"class="fun"></td>
+                    <td><input type="button" value="cos" onclick="cos()"class="fun"></td>
+                    <td><input type="button" value="tan" onclick="tan()"class="fun"></td>
+                    <td><input type="button" value="DEL" onclick="Del()" style="background-color:rgb(168, 36, 36); border: rgb(168, 36, 36);color: white; "></td>
+                </tr>    
+            <tr>
+                <td><input type="button" value="7" onclick="Dic('7')"></td>
+                <td><input type="button" value="8" onclick="Dic('8')"></td>
+                <td><input type="button" value="9" onclick="Dic('9')"></td>
+                <td><input type="button" value="/" onclick="Dic('/')" class="opr"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="Dic('4')"></td>
+                <td><input type="button" value="5" onclick="Dic('5')"></td>
+                <td><input type="button" value="6" onclick="Dic('6')"></td>
+                <td><input type="button" value="*" onclick="Dic('*')" class="opr"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="Dic('1')"></td>
+                <td><input type="button" value="2" onclick="Dic('2')"></td>
+                <td><input type="button" value="3" onclick="Dic('3')"></td>
+                <td><input type="button" value="-" onclick="Dic('-')" class="opr"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="Dic('0')"></td>
+                <td><input type="button" value="." onclick="Dic('.')"></td>
+                <td><input type="button" value="=" onclick="equal('=')" style="background-color: orange; border: orange;"></td>
+                <td><input type="button" value="+" onclick="Dic('+')" class="opr"></td>
+            </tr>
+            
+        </table>
+    </div>
+
+    </div>
+</div>
+
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
